@@ -9,6 +9,10 @@
     </head>
 
     <style>
+        .navbar{
+            z-index: 5;
+        }
+        
         .bg-color{
             background-color: #8a8d56;
             opacity: 0.8;
@@ -70,6 +74,7 @@
         }
         .banner{
             position: relative;
+            width: 100%;
         }
         .banner-name{
         position: absolute;
@@ -83,6 +88,7 @@
         bottom: -20px;
         left: 40px;
         }
+
         .card-hot{
             position: relative;
         }
@@ -100,19 +106,40 @@
 /* --------------------------------------------------------- */
         @media screen and (max-width: 700px){
             .banner{
-            position: relative;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
             }
             .banner-name{
                 position: absolute;
                 bottom: 5px;
-                right: 280px;
-                transform: scale(0.5);
+                left: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                transform: scale(0.8);
             }
             .banner-name h2{
                 opacity: 0;
         }
         }
+/* --------------------------------------------------------- */
             
+        @media screen and (max-width: 768px){
+            .nav-link{
+            background-color: #676565;
+            color: #d8d8d3;
+            padding-left: 10px;
+            border: #8b8b8a solid 0.3px;
+        }
+        .nav-link:hover{
+            background-color: #878585;
+
+        }
+        }
+/* --------------------------------------------------------- */
 
     </style>
     <body>
@@ -162,7 +189,7 @@
                 <div class="benner-pic">
                     <img src="https://picsum.photos/1300/450?random=10" class="w-100">
                 </div>
-                <div class="banner-name">
+                <div class="banner-name ">
                     <img src="./times.png" alt="">
                     <h2>| 穿梭於光陰之間的色彩與文學，沉浸體驗</h2>
                 </div>
