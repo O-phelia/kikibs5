@@ -3,8 +3,8 @@
 }
 
 .bg-color{
-    background-color: #8a8d56;
-    opacity: 0.8;
+    background-color: #605f34;
+    /* opacity: 0.8; */
 }
 .navbar-brand{
     font-size: 17px;
@@ -113,6 +113,10 @@ padding: 5px;
     }
     .banner-name h2{
         opacity: 0;
+}
+.carousel-indicators{
+    opacity: 0;
+
 }
 }
 /* --------------------------------------------------------- */
